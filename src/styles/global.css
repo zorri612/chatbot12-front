@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 1rem;
+  background-color: #25253a;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #6366f1;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 12px;
+  border: none;
+  margin: 0.5rem 0;
+  background-color: #1c1c2b;
+  color: white;
+  font-size: 1rem;
+}
+
+a {
+  color: #8b5cf6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+select {
+  background-color: #2d2d44;
+  border: 1px solid #3f3f5e;
+  cursor: pointer;
+  appearance: none;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  color: #c7d2fe;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+    border-radius: 0;
+    min-height: 100vh;
+    justify-content: center;
+  }
+}
